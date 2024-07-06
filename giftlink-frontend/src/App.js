@@ -12,6 +12,8 @@ import Profile from './components/Profile/Profile';
 
 function App() {
   return (
+    <>
+      <Navbar />
       <Routes>
         <Route path="/" element={<MainPage />} />
         <Route path="/app" element={<MainPage />} />
