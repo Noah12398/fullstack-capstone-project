@@ -19,7 +19,7 @@ jobs:
         run: npm install jshint --global
       - name: Run Linter
         run: |
-          /*jshint esversion: 8 */
+          jshint esversion: 8 
           # This command finds all JavaScript files recursively and runs JSHint on them
           find ./giftlink-backend -name "*.js" -exec jshint {} +
           echo "Linted all the js files successfully"
@@ -36,7 +36,7 @@ jobs:
           node-version: 14
       - name: Run build
         run: |
-          /*jshint esversion: 8 */
+          jshint esversion: 8 
           cd giftlink-frontend
           npm install
           npm run build
